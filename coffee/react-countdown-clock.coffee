@@ -97,7 +97,7 @@ ReactCountdownClock = CreateReactClass
 
   _tick: ->
     if @props.onTick
-      @props.onTick()
+      @props.onTick(@_seconds)
 
     start = Date.now()
     @_timeoutIds.push(setTimeout ( =>
