@@ -2,6 +2,8 @@
 
 A HTML 5 canvas countdown clock as a React component.
 
+* Added an onTick function as Props by me (Caspar Boetes).
+
 ![Screenshot](http://pughpugh.github.io/react-countdown-clock/animated.gif)
 
 ## Demo
@@ -38,6 +40,7 @@ npm install react-countdown-clock
 | timeFormat       | string         | seconds | Counter style; `seconds` or `hms`                         |
 | showMilliseconds | boolean        | true    | Show milliseconds for last 10 seconds                     |
 | onComplete       | func           |         | Callback when time completes                              |
+| onTick           | func           |         | Add actions at set seconds                                |
 | paused           | boolean        | false   | Pause countdown of the timer                              |
 | pausedText       | string         |         | Text to display when paused, defaults to the current time |
 
